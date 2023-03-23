@@ -1,0 +1,26 @@
+<!--
+  Generated template for the VacinasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>vacinas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+     <ion-item *ngFor = "let b of contatos">
+        <h2> Nome da Criança: {{b.nomecrianca}} </h2>
+        <p> Data Nascimento:  {{b.data}} </p>
+        <p> Nome da Mãe: {{b.nomemae}} </p>
+        <p> Nome do Pai: {{b.nomePai}} </p>
+        <p> E-mail: {{b.email}} </p>
+
+     </ion-item>
+  </ion-list>
+
+   
+</ion-content>

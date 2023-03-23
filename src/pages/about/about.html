@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+          <ion-label floating>Nome da Criança</ion-label>
+          <ion-icon name="happy" item-start></ion-icon>
+      @ionicframework
+         <ion-input type="text" [(ngModel)]="nomeCrianca"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label>Data de Nascimento</ion-label>
+            <ion-icon name="calendar" item-start></ion-icon>
+      @ionicframework
+            <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
+          </ion-item>
+
+        <ion-item>
+            <ion-label floating>Nome da Mãe</ion-label>
+            <ion-icon name="woman" item-start></ion-icon>
+      @ionicframework
+           <ion-input type="text" [(ngModel)]="nomeMae"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+             <ion-label floating>Nome do Pai</ion-label>
+             <ion-icon name="man" item-start></ion-icon>
+      @ionicframework
+             <ion-input type="text" [(ngModel)]="nomePai"></ion-input>
+      
+          </ion-item>
+
+          <ion-item>
+              <ion-label floating>Endereço</ion-label>
+              <ion-icon name="home" item-start></ion-icon>
+      @ionicframework
+             <ion-input type="text" [(ngModel)]="endereco"></ion-input>
+            </ion-item>
+        
+            <ion-item>
+                <ion-label floating>Cidade</ion-label>
+                <ion-icon name="bus" item-start></ion-icon>
+      @ionicframework
+               <ion-input type="text" [(ngModel)]="cidade"></ion-input>
+              </ion-item>
+          
+              <ion-item>
+                 <ion-label floating>E-mail</ion-label>
+                 <ion-icon name="at" item-start></ion-icon>
+      @ionicframework
+                 <ion-input type="text" [(ngModel)]="email"></ion-input>
+          
+              </ion-item>
+
+              <ion-item>
+                <ion-label floating>Senha</ion-label>
+                <ion-icon name="key" item-start></ion-icon>
+      @ionicframework
+                <ion-input type="password" [(ngModel)]="senha"></ion-input>
+              </ion-item>
+
+              <div>
+                <button ion-button block [navPush]="LoginPage">ENVIar</button>
+              </div>
+
+
+    
+      
+      </ion-list>
+
+</ion-content>
